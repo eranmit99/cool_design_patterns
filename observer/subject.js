@@ -1,8 +1,7 @@
 /**
  * 
- * @authors Your Name (you@example.org)
+ * @authors Eran Mitrani (eranmit@gmail.com)
  * @date    2017-09-21 18:44:03
- * @version $Id$
  */
 
 
