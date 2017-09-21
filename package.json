@@ -1,0 +1,19 @@
+{
+  "name": "cool_design_patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eranmit99/cool_design_patterns.git"
+  },
+  "author": "eranmit@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eranmit99/cool_design_patterns/issues"
+  },
+  "homepage": "https://github.com/eranmit99/cool_design_patterns#readme"
+}
