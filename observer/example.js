@@ -3,7 +3,7 @@
  * @authors Eran Mitrani (eranmit@gmail.com)
  * @date    2017-09-21 18:36:41
  */
-
+ 
 const Subject = require('./Subject');
 const Observer = require('./Observer');
 
