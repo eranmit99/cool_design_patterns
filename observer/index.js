@@ -5,50 +5,12 @@
  * @version $Id$
  */
 
-class Subject {
-	constructor(args) {
-		this.observers = [];
-	}
- 
-	subscribe(observer){
-      this.observers.push(observer)
-	}
-    
-    unSubscribe(observer){
-       this.observers.forEach((obs, index) => {
-       		if (observer === obs) {
-       			this.observers.splice(index, 1)
-       		}
-       });
-	}
+const Subject = require('./Subject');
+const Observer = require('./Observer');
 
-	notifyObserver(observer, data) {
-      this.observers.forEach((obs, index) => {
-      	 if (observer === obs) {
-      	 	obs.notify(data)
-      	 }
-      });
-	}
-
-	notifyAllObservers(data) {
-      this.observers.forEach((obs, index) => {
-      	  obs.notify(data)
-      });
-	}
-
-}
-
-class Observer {
-	constructor(handler) {
-		this.handler = handler;
-	}
-
-	notify(data){
-      this.handler(data)
-	}
-}
 
 class AddressUpdater extends Subject {
+	
 	constructor() {
 		super()
         this.addressHandlers = {
@@ -73,8 +35,6 @@ class AddressUpdater extends Subject {
 	}
     
 }
-
-
 
 const AU = new AddressUpdater();
 
