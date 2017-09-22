@@ -18,14 +18,14 @@ module.exports = class SimplePromise {
 
 	handle(callback, data) {
 		if (this.isHandled) {
-        	return;
-        }
+			return;
+		}
 
 		this.isHandled = true;
 		callback(data);
 	}
 
-	resolve(data) {	
+	resolve(data) {
 		this.handle(this.onResolve, data)
 	}
 
@@ -33,14 +33,14 @@ module.exports = class SimplePromise {
 		this.handle(this.onReject, err)
 	}
 
-	then(callback) {	
+	then(callback) {
 		if (typeof callback === "function") {
 			this.onResolve = callback
 		}
 		return this;
 	}
 
-	catch(callback) {	
+	catch (callback) {
 		if (typeof callback === "function") {
 			this.onReject = callback
 		}
