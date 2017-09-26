@@ -7,7 +7,6 @@
 module.exports = class SimplePromise {
 	constructor(callback) {
 		const noop = () => {};
-
 		this.onResolve = this.onReject = noop;
 		this.isHandled = false;
 
